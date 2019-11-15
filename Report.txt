@@ -1,0 +1,19 @@
+Eric Rockwood
+
+Time expected: 8-10 hours.
+Actual: ~20-22 hours.
+
+I had quite some trouble with this project. Partly was I tried to write some of the methods and test them in the
+BSTDriver class, I kept getting some errors that had to do with the parseInt. After a day of trying to figure it out
+on my own then after asking on Piazza, and as I found out other people where having this problem too, did we finally
+figure out what the root (get it?) of the problem was. In the Books.txt file a some of the years where out of place
+and so the parseInt was getting stuff like "980 " which is not allowed. After doing some quick research, I discovered
+the best thing to do was to expand where the substring was looking and to add .trim() to the end to ensure that
+the parseInt would not get a value like "980 " and throw an error. This had taken way longer than I would have liked
+and kept me from working on the project. Another problem I had was again testing the BST in the driver class.
+Simply put, even with an AMD Ryzen 5 3600X CPU in my personal computer, it took way too long to create the BST every
+time I ran the Driver. I really didn't want to wait 2-3 minutes for the tree to construct just to see if the one line
+of code I changed fixed my problem. Because of this, I ran out of time to work on the project because I did not have
+the time to wait. It would have been nice if we had a way to save the constructed BST, which I spent about an hour
+trying to do but could not get it to work so I gave up on that. I hope that the next project will not take as long as
+this one did to construct.
